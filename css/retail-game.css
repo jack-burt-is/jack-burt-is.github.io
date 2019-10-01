@@ -4,7 +4,9 @@
 #section1 .fp-tableCell {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; }
 
 #intro {
   width: 50%; }
@@ -19,7 +21,7 @@
     height: 70%; }
 
 #character-creator-container {
-  margin-left: 50px;
+  margin-left: 10vw;
   height: 680px;
   width: 250px;
   overflow: hidden;
@@ -75,8 +77,8 @@
   justify-content: space-around;
   height: 680px;
   width: 50px;
-  bottom: 0;
-  left: 350px;
+  bottom: -75px;
+  left: calc(250px + 12vw);
   position: absolute; }
 
 .arrow {

@@ -6,6 +6,8 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
 }
 
 #intro {
@@ -30,7 +32,7 @@ $char-height:680px;
 $char-width:250px;
 
 #character-creator-container {
-	margin-left: 50px;
+	margin-left: 10vw;
 	height: $char-height;
 	width:$char-width;
 	overflow: hidden;
@@ -92,8 +94,8 @@ $char-width:250px;
 	justify-content: space-around;
 	height: $char-height;
 	width: 50px;
-	bottom:0;
-	left: $char-width + 100;
+	bottom:-75px;
+	left: calc(#{$char-width} + 12vw);
 	position: absolute;
 }
 
