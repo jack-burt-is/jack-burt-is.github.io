@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Horizon Corporation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="javascript/smoothscroll.js"></script>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="javascript/barba.min.js"></script>
+    <script src="javascript/fade-barba.js"></script>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/coin-animation.js"></script>
+    <script src="javascript/buildings-animation.js"></script>
+    <script src="javascript/blueprint-animation.js"></script>
+    <script src="javascript/background.js"></script>
+    <script src="javascript/aosinit.js"></script>
+    <script src="javascript/carousel.js"></script>
+    <script src="javascript/headersize.js"></script>
+
+
+  </head>
+  
+  <body>
+    <div  id="barba-wrapper">
+      <div class='header'> 
+        <a href="index.html">
+          <div class="scalable-wrapper index">
+            <div class="logo index">
+              <img class="index" src="img/horizon-swish-blue.png">
+              <p class="index" id="horizon">HORIZON</p>
+              <p class="index" id="corp">CORPORATION</p>
+            </div>
+          </div>
+        </a>
+
+        <div class='nav'>
+
+          <ul>
+              <li><a href="index.html">Who We Are</a></li>
+              <li><a href="whatwedo.html">What We Do</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+
+      </div>
+      <div class='barba-container content' id='about'>
+        <div class="head-back"></div>
+
+        <div class="contact-form">
+
+          <h2>Contact Us</h2>
+          <p><b>Get in touch below:</b></p>
+
+          <form class="cf" onclick="SendEmail();" method="POST">
+            <div class="half left cf">
+              <input class="input-area" type="text" id="input-name" placeholder="Name" name="name">
+              <input class="input-area" type="email" id="input-email" placeholder="Email address" name="email">
+              <input class="input-area" type="text" id="input-subject" placeholder="Subject" name="subject">
+              <input type="submit" value="Send" id="input-submit" name="message">
+
+            </div>
+            <div class="half right cf">
+              <textarea class="input-area" name="message" type="text" id="input-message" placeholder="Message"></textarea>
+
+              <input type="reset" value="Clear" id="input-submit" name="message">
+            </div>  
+          </form>
+
+          <table id="contact-table">
+            <tr>
+              <th id="c1">Telephone</th>
+            </tr>
+            <tr>
+              <td id="c1">United Kingdom:</td>
+              <td id="c2">+44 207 397 2889</td>
+            </tr>
+            <tr>
+              <td id="c1">South Africa:</td>
+              <td id="c2">+27 83 388 6150</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <th id="c1">Email</th>
+            </tr>
+            <tr>
+              <td id="c1">General Enquiries:</td>
+              <td id="c2"><a href="mailto:admin@horizon-corporation.com">admin@horizon-corporation.com</a></td>
+            </tr>
+          </table>
+
+        </div>
+
+
+
+        <div class='footer'>
+        <table>
+          <tr>
+            <th>Who we  are</th>
+            <th>What we do</th> 
+            <th>Team</th>
+            <th>Contact Us</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Real Estate</td> 
+            <td>Bradley Rawson</td>
+            <td>Email</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Project Development</td> 
+            <td>Grant Rawson</td>
+            <td>Google Maps</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Private Equity</td> 
+            <td>Charlie Chase-Gardener</td>
+            <td>UK Number: +44 207 397 2889</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Corporate and Social Responsibility</td> 
+            <td>Darius Ghesmati</td>
+            <td>SA Number: +27 83 388 6150</td>
+           </tr>
+            <tr>
+              <td></td>
+              <td></td> 
+              <td>Simon Burt</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+  </body>
+</html>

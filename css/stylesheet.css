@@ -1,0 +1,121 @@
+html, body {
+  background-color: #fff;
+  margin: 0; }
+
+h1 {
+  text-align: center;
+  font-family: 'Dosis';
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 3em; }
+
+h2 {
+  font-family: 'Dosis';
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 2em; }
+
+h3 {
+  font-family: 'Dosis';
+  font-weight: lighter; }
+
+p {
+  font-family: 'Dosis';
+  font-weight: lighter; }
+
+.content {
+  width: 70vw;
+  font-size: 1.2em;
+  margin: auto; }
+
+#header {
+  height: 10vh;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference; }
+
+#header ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none; }
+
+#header li {
+  display: inline;
+  text-decoration: none;
+  color: white; }
+
+#header li a {
+  font-family: "Dosis";
+  color: white;
+  width: auto;
+  display: inline-block;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 0.5s ease; }
+
+#logo {
+  padding-left: 2.5vw;
+  font-family: "Dosis";
+  color: white;
+  font-size: 1em; }
+
+#scroll span {
+  z-index: 100;
+  cursor: pointer;
+  margin-top: 60px;
+  position: fixed;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  mix-blend-mode: difference;
+  bottom: 7.5vh; }
+
+#scroll span::after {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+  mix-blend-mode: difference; }
+
+.fp-tableCell {
+  overflow-x: hidden; }
+
+#fp-nav {
+  mix-blend-mode: difference; }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background-color: white;
+  mix-blend-mode: difference; }
+
+#fp-nav ul li .fp-tooltip {
+  mix-blend-mode: difference; }
+
+/*# sourceMappingURL=stylesheet.css.map */

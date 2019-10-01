@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jack Burt</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d0abbe5652.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" href="css/stylesheet.css"/>
+</head>
+
+<body>
+    <div  id="barba-wrapper">
+
+		<div id="header">
+			<h3 id="logo">Jack Burt</h3>
+		    <ul id="nav">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="">Contact</a></li>
+		    </ul>
+		</div>
+
+		<div id="fullpage" class="barba-container">
+			<link rel="stylesheet" href="css/contact.css"/>
+
+			<div class="section" id="section1">
+				<h1>Contact Me</h1>
+				<h2>Feel free to get in touch through any of the following methods:</h2>
+				<div id="contact-bubbles">
+					<div class="contact-bubble" id="email">
+						<span class="bubble"><i class="fas fa-envelope"></i></span>
+						<p>EMAIL</p>
+						<a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk</a>
+					</div>
+					<div class="contact-bubble" id="linkedin">
+						<span class="bubble"><i class="fab fa-linkedin"></i></span>
+						<p>LINKEDIN</p>
+						<a href="https://www.linkedin.com/in/jack-burt-779809124/">Jack Burt</a>
+					</div>
+					<div class="contact-bubble" id="twitter">
+						<span class="bubble"><i class="fab fa-twitter"></i></span>
+						<p>TWITTER</p>
+						<a href="https://twitter.com/jackburtdev">@jackburtdev</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="section2"> 
+				<h1>Or fill out this form to send me an email from the site</h1>
+				<form class="cf" onclick="SendEmail();" method="POST">
+		            <div class="half left cf">
+		              <input class="input-area" type="text" id="input-name" placeholder="Name" name="name">
+		              <input class="input-area" type="email" id="input-email" placeholder="Email address" name="email">
+		              <input class="input-area" type="text" id="input-subject" placeholder="Subject" name="subject">
+		              <input type="submit" value="Send" id="input-submit" name="message">
+
+		            </div>
+		            <div class="half right cf">
+		              <textarea class="input-area" name="message" type="text" id="input-message" placeholder="Message"></textarea>
+
+		              <input type="reset" value="Clear" id="input-submit" name="message">
+		            </div>  
+		          </form>
+
+	 		</div>
+
+		</div>
+
+	</div>
+
+	 <a id="scroll"><span id="scroll-span"></span></a>		
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/barba.min.js"></script>
+    <script src="js/fade-barba.js"></script>
+	<script src="js/init.js"></script>
+
+</body>

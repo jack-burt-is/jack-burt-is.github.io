@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jack Burt</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="../css/rhs-experience.css"/>
+
+</head>
+
+<body>
+
+	<div id="barba-wrapper">
+
+	<div id="header">
+			<h3 id="logo">Jack Burt</h3>
+		    <ul id="nav">
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/projects.html">Projects</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+		    </ul>
+		</div>
+
+		<div id="fullpage" class="barba-container">
+			<link rel="stylesheet" type="text/css" href="../css/rhs-experience.css"/>
+			<script src="../js/rhs-experience.js"></script>
+
+			<div class="section" id="section1">
+				<div class="content" id="section1-intro" data-aos="fade-right" data-aos-duration="1000">
+					<h2>RHS Experience - Android Application</h2>
+					<p>
+						During my final year at University I developed an android application for my Professional Project module, equivalent to a dissertation. 
+						This project was aimed towards tackling problems in the Visitor Attraction industry.
+						The Visitor Attraction industry within the United Kingdom has shown steady growth since 2013, however the use of mobile technology is still limited, with very few attractions offering mobile applications. A 2018 survey conducted at several art museums showed that 9 out of 10 respondents agreed that mobile applications made information easier to access with the vast majority believing they enhanced their overall experience. However in certain attractions or with certain demographics of customers visiting these attractions, the intrusiveness of a mobile application can often seem off-putting or distracting.
+						<br><br>
+						This exploratory project aimed to develop an intelligent application that caters to as many demographics as possible, improving customer engagement while promoting repeat custom and avoiding intrusive design. It will tackle the opportunity of encouraging customers to turn a single visit into a hobby they can develop and nurture. The application will use the Royal Horticultural Society’s Gardens at Wisley as a specific subject on which to explore these motivations, allowing users to create their own garden which harnesses the expertise of the RHS.
+					</p>
+				</div>
+
+				<span id="bg-circle"></span>
+				<div id="portrait-mockup-container">
+					<div id="screen">
+						<img class="" id="screen1" src="../png/encyclopedia-screenshot.png">
+						<img id="screen2" src="../png/plant-screenshot.png">
+					</div>
+					
+					<img id="portrait-mockup" src="../png/google-pixel-2-tall-mockup.png">
+				</div>
+			</div>
+
+			<div class="section" id="section2"> 
+				<div class="content" id="section2-outline" data-aos="fade-right" data-aos-duration="1000">
+					<h2>Application Outline</h2>
+					<p>
+						There are three different sections to this app, including the following:
+						<ul>
+							<li><p>An encyclopedia - users are be able to access knowledge on plants and flowers at face value, being able to filter plants by certain attributes or by their name.</p></li>
+							<li><p>A gardening section - users are able to create, store and view plots which can be customised to include dimensions and surrounding foliage/buildings that may provide shade. Using the geographic location of the garden, users can get information on how many hours of sunlight, short-term forecasts and estimated rainfall to not only help them choose plants best suited to their environment, but how to maintain them.</p></li>
+							<li><p>A walks section - users are able to select plants they are most interested in, and have walks created for them specifically designed to see as many of their interests as possible, while staying within the distance range they can provide. These walks can be favourited and re-visited whenever the user wishes.</p></li>
+						</ul>
+					</p>
+				</div>
+				<div class="content" id="section2-features" data-aos="fade-left" data-aos-duration="1000">
+					<h2>Key Features</h2>
+					<p>
+						There are two particular interesting features implemented within the application:
+						<br><br>
+						One of which is the ability to calculate sun exposure based on a user's geography, the width and length of a garden plot, and the height and distance of surrounding objects.
+						<br>
+						A 'Sun Rating' figure is calculated to inform the user of the percentage of time between sunrise and sunset that their garden plot is not being shaded by any object.
+						<br><br>
+						Another feature of the aplication is the ability to calculate a route through user-selected 'Points of Interest', with said route being the fastest route taking into consideration all possible routes between these points, bearing in mind there are multiple options for the location of each point.
+						<br><br>
+						Both these 'Walk' and 'Plot' objects can be stored in a Firestore database and accessed by the relevant user at any time.
+					</p>
+				</div>
+				
+				<img id="angled-mockup" src="../png/google-pixel-2-side-mockup.png" data-aos="fade-right" data-aos-duration="1000">
+			</div>
+
+			<div class="section" id="section3">
+				<div class="content" id="section3-report" data-aos="fade-up" data-aos-duration="1000">
+					<embed src="../pdf/fyp-report.pdf" width="60%" height="70%" />
+					<div id="report-text">
+						<p>To read more about the project, the full report can be viewed above, detailing everything from conception to release, including literature review, research, design, implementation and evaluation. If you are unable to see the report or would rather download the PDF and view in your preferred PDF viewer, feel free to <a href="../pdf/fyp-report.pdf">use this link.</a></p>
+						<p>Please visit my <a href="https://github.com/jackburt12/Professional-Project-UoS">GitHub repository</a> to view the Android Studio project and view all code.</p>
+					</div>
+				</div>
+			</div>
+
+			<script src="/js/rhs-experience.js"></script>
+
+		</div>
+
+	</div>
+
+	<a id="scroll"><span id="scroll-span"></span></a>		
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript" src="../js/fullpage.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/barba.min.js"></script>
+    <script src="../js/fade-barba.js"></script>
+    <script src="../js/init.js"></script>
+
+
+</body>

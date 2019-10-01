@@ -1,0 +1,168 @@
+*:focus {
+    outline: none;
+}
+
+#section1 .fp-tableCell {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#intro {
+	width: 50%;
+}
+
+
+
+#section2 .fp-tableCell {
+	background-color: black;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+    video {
+    	width: 70%;
+    	height: 70%;
+    }
+}
+
+$char-height:680px;
+$char-width:250px;
+
+#character-creator-container {
+	margin-left: 50px;
+	height: $char-height;
+	width:$char-width;
+	overflow: hidden;
+	position: relative;
+}
+
+.character-item {
+	height: $char-height;
+	width: 3*$char-width;
+	position: absolute;
+	-webkit-transition: all 0.2s ease-in-out; /* Safari prior 6.1 */
+}
+
+#hair.character-item {
+	z-index: 10;
+	background-image: url("../png/hairs.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#shirt.character-item {
+	z-index: 8;
+	background-image: url("../png/shirts.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#pants.character-item {
+	z-index: 6;
+	background-image: url("../png/pants.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#shoes.character-item {
+	z-index: 4;
+	background-image: url("../png/shoes.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#character-container {
+	height: $char-height;
+	width:$char-width;
+	background-image: url("../png/character-base.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#right-arrows {
+	z-index: 12;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: $char-height;
+	width: 50px;
+	bottom:0;
+	left: $char-width + 100;
+	position: absolute;
+}
+
+.arrow {
+  cursor: pointer;
+  height: 60px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform .1s;
+  width: 40px;
+  
+  $transition-time: .15s;
+  
+  &-top,
+  &-bottom {
+    background-color: #666;
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+    &:after {
+      background-color: #aaa;
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all $transition-time;
+    }
+  }
+  
+  &-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+    
+    &:after {
+      left: 100%;
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+  
+  &-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    
+    &:after {
+      left: 0;
+      right: 100%;
+      transition-delay: $transition-time;
+    }
+  }
+  
+  &:hover & {
+    
+    &-top:after {
+      left: 0;
+      transition-delay: $transition-time;
+    }
+
+    &-bottom:after {
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+  
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+}
