@@ -31,7 +31,6 @@ Barba.Dispatcher.on('transitionCompleted', function() {
 		verticalCentered: true,
 		navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Welcome', 'About me', 'Skills and Technologies']
 	});
 
 	document.getElementById("scroll-span").addEventListener("click", function(e) {
