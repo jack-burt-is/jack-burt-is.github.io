@@ -15,8 +15,6 @@ if (!preg_match(
 $email_address))
 {
     $errors .= "\n Error: Invalid email address";
-    header('Location: /contact.html');
-
 }
 
 if( empty($errors))
@@ -31,5 +29,8 @@ $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
 header('Location: /email-confirm.html');
+} else {
+    header('Location: /email-failure.html');
+
 }
 ?>
