@@ -21,13 +21,13 @@ if( empty($errors))
 {
 $to = $myemail;
 $email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message:".
-"Here are the details:\n\nName:\n$name\n\n".
-"Email:\n$email_address\n\nMessage:\n\n$message";
+$email_body = "You have received a new message:\n\n".
+"Name:\n$name\n\n".
+"Email:\n$email_address\n\nMessage:\n$message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
-header('Location: /contact.html');
+header('Location: /email-confirm.html');
 }
 ?>
