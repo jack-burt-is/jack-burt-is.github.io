@@ -15,6 +15,8 @@ if (!preg_match(
 $email_address))
 {
     $errors .= "\n Error: Invalid email address";
+    header('Location: /contact.html');
+
 }
 
 if( empty($errors))
