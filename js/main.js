@@ -28,22 +28,22 @@ var Index = Barba.BaseView.extend({
 var Projects = Barba.BaseView.extend({
   namespace: 'projects',
   onEnter: function() {
-    LabelArr = ['RHS Experience', 'Retail Game'];
-    init(LabelArr);
+    
   },
   onEnterCompleted: function() {
-      // The Transition has just finished.
+      LabelArr = ['RHS Experience', 'Retail Game'];
+    init(LabelArr);
   }
 });
 
 var Contact = Barba.BaseView.extend({
   namespace: 'contact',
   onEnter: function() {
-    LabelArr = ['Links', 'Form'];
-    init(LabelArr);
+    
   },
   onEnterCompleted: function() {
-      // The Transition has just finished.
+      LabelArr = ['Links', 'Form'];
+    init(LabelArr);
   }
 });
 
