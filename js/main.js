@@ -88,7 +88,18 @@ var EmailFailure = Barba.BaseView.extend({
     
   },
   onEnterCompleted: function() {
-    LabelArr = ['Confirm'];
+    LabelArr = ['Failed'];
+    init(LabelArr);
+  }
+});
+
+var FourOhFour = Barba.BaseView.extend({
+  namespace: '404',
+  onEnter: function() {
+    
+  },
+  onEnterCompleted: function() {
+    LabelArr = ['404'];
     init(LabelArr);
   }
 });
