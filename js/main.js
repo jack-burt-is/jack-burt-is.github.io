@@ -115,7 +115,7 @@ ar FadeTransition = Barba.BaseTransition.extend({
       opacity : 0
     });
 
-    $el.animate({ opacity: 1 }, 2000, function() {
+    $el.animate({ opacity: 1 }, 400, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
