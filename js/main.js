@@ -78,6 +78,7 @@ Projects.init();
 Contact.init();
 RHS.init();
 Retail.init();
+Barba.Pjax.start();
 
 
 function init(labels) {
