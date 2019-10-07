@@ -71,12 +71,36 @@ var Retail = Barba.BaseView.extend({
   }
 });
 
+var EmailConfirm = Barba.BaseView.extend({
+  namespace: 'email-confirm',
+  onEnter: function() {
+    
+  },
+  onEnterCompleted: function() {
+    LabelArr = ['Confirm'];
+    init(LabelArr);
+  }
+});
+
+var EmailFailure = Barba.BaseView.extend({
+  namespace: 'email-failure',
+  onEnter: function() {
+    
+  },
+  onEnterCompleted: function() {
+    LabelArr = ['Confirm'];
+    init(LabelArr);
+  }
+});
+
 // Don't forget to init the view!
 Index.init();
 Projects.init();
 Contact.init();
 RHS.init();
 Retail.init();
+EmailConfirm.init();
+EmailFailure.init();
 
 var transEffect = Barba.BaseTransition.extend({
   start: function(){
