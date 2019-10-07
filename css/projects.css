@@ -1,3 +1,36 @@
+h1 {
+  mix-blend-mode: difference;
+  position: relative; }
 
+a {
+  text-decoration: none;
+  color: white; }
+
+h1:after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  bottom: -6px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+  background: #fff;
+  /* optional animation */
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+h1:hover:after {
+  width: 50%;
+  background: #e82; }
+
+#section1 .fp-tableCell {
+  background-image: url("../png/fyp-screenshot.png"); }
+
+#section2 .fp-tableCell {
+  background-image: url("../png/retail-screenshot.png"); }
 
 /*# sourceMappingURL=projects.css.map */
