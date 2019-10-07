@@ -28,9 +28,13 @@ h1:hover:after {
   background: #e82; }
 
 #section1 .fp-tableCell {
-  background-image: url("../png/fyp-screenshot.png"); }
+  background-image: url("../png/fyp-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #section2 .fp-tableCell {
-  background-image: url("../png/retail-screenshot.png"); }
+  background-image: url("../png/retail-screenshot.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=projects.css.map */

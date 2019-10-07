@@ -35,9 +35,13 @@ h1:hover:after {
 
 #section1 .fp-tableCell {
 	background-image: url("../png/fyp-screenshot.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 #section2 .fp-tableCell {
 	background-image: url("../png/retail-screenshot.png");
+	background-repeat: no-repeat;
+ 	background-size: cover;
 }
 
