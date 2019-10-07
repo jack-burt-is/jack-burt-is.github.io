@@ -3,25 +3,22 @@ var LabelArr;
 var Index = Barba.BaseView.extend({
   namespace: 'index',
   onEnter: function() {
-      LabelArr = ['Home', 'About me', 'Skills & Technologies'];
-      init(LabelArr);
-
-      var isVisible = false;
-
-      var textWrapper = document.querySelector('.ml9 .letters');
-      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-      animateIn();
-
-      isVisible = true;
-
-      window.onscroll = function() {index_scroll()};
-
+      
   },
   onEnterCompleted: function() {
-      // The Transition has just finished.
-      //console.log("INDEX VIEW IS TRIGGERED");
+    LabelArr = ['Home', 'About me', 'Skills & Technologies'];
+    init(LabelArr);
 
+    var isVisible = false;
+
+    var textWrapper = document.querySelector('.ml9 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    animateIn();
+
+    isVisible = true;
+
+    window.onscroll = function() {index_scroll()};
   }
 });
 
@@ -31,7 +28,7 @@ var Projects = Barba.BaseView.extend({
     
   },
   onEnterCompleted: function() {
-      LabelArr = ['RHS Experience', 'Retail Game'];
+    LabelArr = ['RHS Experience', 'Retail Game'];
     init(LabelArr);
   }
 });
@@ -42,7 +39,7 @@ var Contact = Barba.BaseView.extend({
     
   },
   onEnterCompleted: function() {
-      LabelArr = ['Links', 'Form'];
+    LabelArr = ['Links', 'Form'];
     init(LabelArr);
   }
 });
@@ -50,25 +47,25 @@ var Contact = Barba.BaseView.extend({
 var RHS = Barba.BaseView.extend({
   namespace: 'rhs-experience',
   onEnter: function() {
+    
+  },
+  onEnterCompleted: function() {
     LabelArr = ['Introduction', 'Features', 'Report'];
     init(LabelArr);
     window.onscroll = function() {rhs_scroll()};
-  },
-  onEnterCompleted: function() {
-      // The Transition has just finished.
   }
 });
 
 var Retail = Barba.BaseView.extend({
   namespace: 'retail-game',
   onEnter: function() {
+    
+  },
+  onEnterCompleted: function() {
     LabelArr = ['Introduction', 'Trailer'];
     init(LabelArr);
 
     retail_arrows();
-  },
-  onEnterCompleted: function() {
-      // The Transition has just finished.
   }
 });
 
