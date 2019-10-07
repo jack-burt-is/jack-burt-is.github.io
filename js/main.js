@@ -19,6 +19,8 @@ var Index = Barba.BaseView.extend({
     isVisible = true;
 
     window.onscroll = function() {index_scroll()};
+
+    index_particles();
   }
 });
 
