@@ -83,9 +83,9 @@ var transEffect = Barba.BaseTransition.extend({
   fadeInNewcontent: function(nc) {
     nc.hide();
     var _this = this;
-    $(this.oldContainer).fadeOut(1000).promise().done(() => {
+    $(this.oldContainer).fadeOut(2500).promise().done(() => {
       nc.css('visibility','visible');
-        nc.fadeIn(1000, function(){
+        nc.fadeIn(5000, function(){
           _this.done();
         })
       });
