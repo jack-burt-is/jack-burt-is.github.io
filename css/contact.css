@@ -172,11 +172,16 @@ form textarea {
   form {
     width: 85vw; }
     form input, form textarea {
-      font-size: 2em; }
+      font-size: 1.5em; }
     form textarea {
       height: 8em; }
 
   .half {
-    width: 100%; } }
+    width: 100%; }
+
+  #section2 h2 {
+    width: 85vw;
+    text-align: center;
+    margin: auto; } }
 
 /*# sourceMappingURL=contact.css.map */

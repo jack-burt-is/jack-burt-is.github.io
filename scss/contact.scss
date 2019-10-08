@@ -216,7 +216,7 @@ form textarea {
     width: 85vw;
 
      input, textarea {
-      font-size: 2em;
+      font-size: 1.5em;
      }
      textarea {
       height: 8em;
@@ -225,6 +225,12 @@ form textarea {
 
   .half {
     width: 100%;
+  }
+
+  #section2 h2 {
+    width: 85vw;
+    text-align: center;
+    margin: auto;
   }
 
 }
