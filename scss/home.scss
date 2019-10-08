@@ -260,6 +260,7 @@
 		margin-bottom: 5vh;
 
 		h2 {
+			margin: 0;
 			height: 20%;
 			font-size: 3em !important;
 		}
@@ -269,14 +270,18 @@
 	.skill-column:after {
 	    position: absolute;
 	    content: '';
-	    height: 1px;
-	    bottom: -6px; 
+	    height: 2px;
+	    bottom: -2.5vh; 
 
 	    margin: 0 auto;
 	  	left: 0;
 	    right: 0;
-		width: 30%;
-		background: #fff;
+		width: 55%;
+		background: #000;
+	}
+
+	#programs:after {
+		display: none;
 	}
 
 	.inner-column {
