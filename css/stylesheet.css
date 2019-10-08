@@ -106,7 +106,8 @@ p {
   mix-blend-mode: difference; }
 
 .fp-tableCell {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 2.5vw; }
 
 #fp-nav {
   mix-blend-mode: difference; }
@@ -117,5 +118,29 @@ p {
 
 #fp-nav ul li .fp-tooltip {
   mix-blend-mode: difference; }
+
+@media only screen and (max-width: 1200px) {
+  #logo, #header li a {
+    font-size: 2em; }
+
+  .content {
+    width: 95vw;
+    font-size: 2em; }
+
+  h1 {
+    font-size: 5em; }
+
+  h2 {
+    font-size: 4em; }
+
+  #scroll span {
+    width: 92px;
+    height: 92px;
+    margin-left: -46px; }
+
+  #scroll span::after {
+    width: 32px;
+    height: 32px;
+    margin: -24px 0 0 -16px; } }
 
 /*# sourceMappingURL=stylesheet.css.map */

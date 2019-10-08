@@ -6,8 +6,6 @@
 
 #section2 .fp-tableCell {
   background-color: #eee; }
-  #section2 .fp-tableCell h1 {
-    font-size: 2em; }
 
 #contact-bubbles {
   padding-top: 50px;
@@ -94,7 +92,6 @@ form input, form textarea {
   border: 0;
   outline: 0;
   padding: 1em;
-  margin: 1em;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
@@ -157,5 +154,29 @@ form textarea {
 
 .cf:after {
   clear: both; }
+
+@media only screen and (max-width: 1200px) {
+  .contact-bubble {
+    width: 30vw; }
+    .contact-bubble span {
+      height: 200px;
+      width: 200px;
+      font-size: 4em; }
+    .contact-bubble p {
+      font-size: 1.5em; }
+    .contact-bubble a {
+      font-size: 2em; }
+    .contact-bubble i {
+      margin-top: 37%; }
+
+  form {
+    width: 85vw; }
+    form input, form textarea {
+      font-size: 2em; }
+    form textarea {
+      height: 8em; }
+
+  .half {
+    width: 100%; } }
 
 /*# sourceMappingURL=contact.css.map */
