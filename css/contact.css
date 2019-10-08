@@ -7,6 +7,9 @@
 #section2 .fp-tableCell {
   background-color: #eee; }
 
+#section2 h2 {
+  text-align: center; }
+
 #contact-bubbles {
   padding-top: 50px;
   display: flex;
