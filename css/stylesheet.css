@@ -106,8 +106,7 @@ p {
   mix-blend-mode: difference; }
 
 .fp-tableCell {
-  overflow-x: hidden;
-  padding: 2.5vw; }
+  overflow-x: hidden; }
 
 #fp-nav {
   mix-blend-mode: difference; }
