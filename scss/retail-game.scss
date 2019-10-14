@@ -168,3 +168,15 @@ $char-width:250px;
     transform: translateX(-50%) translateY(-50%) scale(0.9);
   }
 }
+
+@media screen and (max-width: 1200px) {
+
+  #character-wrapper {
+    width: 100vw;
+  }
+
+  #intro {
+    width: 100vw;
+  }
+
+}
