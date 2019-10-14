@@ -190,6 +190,7 @@ $color: #68A098;
 	width: 75vw;
 	justify-content: top;
 	align-items: center;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -199,7 +200,7 @@ $color: #68A098;
 		height: 60vw;
 		width: 30vw;
 		right: 0%;
-		top:20%;
+		top:30%;
 
 	}
 
@@ -212,8 +213,22 @@ $color: #68A098;
 		height: 30vw;
 		width: 30vw;
 		right: 10%;
-		top:20%;
+		top:30%;
 
+	}
+
+	#section2-outline {
+		width: 95vw;
+		margin:auto;
+		margin-top:10vh;
+		//margin-left:0;
+		font-size: 1em;
+	}
+
+	#section2-features {
+		font-size: 1em !important;
+		margin:auto;
+		width: 95vw;
 	}
 
 }
