@@ -1,3 +1,6 @@
+#section1 .fp-tableCell {
+  overflow-x: hidden; }
+
 #section1-intro h2 {
   color: #A58861;
   letter-spacing: 0.1em;
@@ -47,9 +50,11 @@
   transition: all 0.5s ease-in-out; }
 
 .container-scrolled {
-  top: 35% !important;
+  top: calc(35vh - 5vw) !important;
   height: 30vw !important;
-  width: 15vw !important; }
+  width: 15vw !important;
+  max-width: 280px;
+  max-height: 560px; }
 
 #screen {
   z-index: 0;
@@ -89,16 +94,15 @@
   height: 100%; }
 
 #angled-mockup {
-  position: absolute;
-  max-width: 900px;
+  padding-top: 7em;
+  float: left;
+  max-width: 600px;
   width: 35vw;
   bottom: 0; }
 
 #section2 {
   text-color: #fff;
   height: 80%; }
-  #section2 p {
-    font-size: 0.7em; }
 
 #section2-outline {
   margin-left: 10%;
@@ -123,7 +127,7 @@
 #section2-features {
   margin-right: 5%;
   color: white;
-  width: 60%;
+  width: 85%;
   overflow: hidden; }
 
 #section2-features h2 {
@@ -152,5 +156,19 @@
   width: 75vw;
   justify-content: top;
   align-items: center; }
+
+@media screen and (max-width: 1200px) {
+  #portrait-mockup-container {
+    height: 60vw;
+    width: 30vw;
+    right: 0%;
+    top: 20%; }
+
+  #bg-circle {
+    position: fixed;
+    height: 30vw;
+    width: 30vw;
+    right: 10%;
+    top: 20%; } }
 
 /*# sourceMappingURL=rhs-experience.css.map */
