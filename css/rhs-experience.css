@@ -158,28 +158,45 @@
   align-items: center; }
 
 @media screen and (max-width: 1200px) {
+  #section1-intro h2 {
+    letter-spacing: 0;
+    font-size: 1.2em; }
+  #section1-intro p {
+    width: 95%;
+    max-height: 90vh; }
+
+  #phone-hole {
+    float: right;
+    width: 50vw;
+    height: 50vw;
+    margin-top: 10vw; }
+
   #portrait-mockup-container {
     height: 60vw;
     width: 30vw;
     right: 0%;
-    top: 30%; }
+    top: 37%; }
 
   #bg-circle {
     position: fixed;
     height: 30vw;
     width: 30vw;
     right: 10%;
-    top: 30%; }
+    top: 37%; }
 
   #section2-outline {
+    max-height: 40vh;
     width: 95vw;
-    margin: auto;
-    margin-top: 10vh;
-    font-size: 1em; }
+    margin: auto; }
+    #section2-outline li {
+      margin-bottom: -0.65em; }
 
   #section2-features {
-    font-size: 1em !important;
     margin: auto;
-    width: 95vw; } }
+    width: 95vw;
+    max-height: 40vh; }
+
+  #section3-report {
+    width: 100%; } }
 
 /*# sourceMappingURL=rhs-experience.css.map */
