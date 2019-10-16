@@ -127,10 +127,23 @@
     transform: translateX(-50%) translateY(-50%) scale(0.9); }
 
 @media screen and (max-width: 1200px) {
+  #section1 .fp-tableCell {
+    max-height: 80vh;
+    flex-direction: column; }
+
   #character-wrapper {
     width: 100vw; }
 
+  #character-creator-container {
+    margin: auto;
+    margin-top: 5vh; }
+
+  #right-arrows {
+    left: calc(250px + 42vw); }
+
   #intro {
-    width: 100vw; } }
+    width: 95vw; }
+    #intro h1 {
+      font-size: 1.4em; } }
 
 /*# sourceMappingURL=retail-game.css.map */
