@@ -189,10 +189,10 @@
     height: 60vw;
     width: 30vw;
     right: 0%;
-    top: 37%; }
+    top: 40vh; }
 
   .container-scrolled {
-    top: calc(25vh - 5vw) !important;
+    top: calc(30vh - 5vw) !important;
     right: -5vw;
     height: 40vw !important;
     width: 20vw !important;
@@ -204,7 +204,7 @@
     height: 30vw;
     width: 30vw;
     right: 10%;
-    top: 37%; }
+    top: 40vh; }
 
   #section2-outline {
     max-height: 40vh;

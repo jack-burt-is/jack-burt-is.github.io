@@ -212,10 +212,11 @@
 
   .skill-column {
     width: 95%;
-    height: 20vh;
+    height: 17vh;
     margin-bottom: 5vh; }
     .skill-column h2 {
       margin: 0;
+      margin-bottom: 1vh;
       height: 20%;
       font-size: 3em !important; }
 
@@ -223,7 +224,7 @@
     position: absolute;
     content: '';
     height: 2px;
-    bottom: -2.5vh;
+    bottom: -1.5vh;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -235,19 +236,19 @@
 
   .inner-column {
     width: 100%;
-    height: 40%; }
+    height: 35%; }
 
   .skill {
     width: 25%;
     float: left; }
 
   .skill img {
-    width: 80px;
-    height: 80px; }
+    width: 60px;
+    height: 60px; }
 
   #languages img {
-    width: 100px;
-    height: 100px; }
+    width: 60px;
+    height: 60px; }
 
   h3 {
     font-size: 2em !important; } }
