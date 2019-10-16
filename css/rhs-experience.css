@@ -151,16 +151,16 @@
 #section3-report {
   margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 75vh;
   width: 75vw;
-  justify-content: top;
+  justify-content: center;
   align-items: center; }
 
 #section3 iframe {
-  width: 75vw;
-  height: 60vh; }
+  width: 65vw;
+  height: 50vh; }
 
 @media screen and (max-width: 1200px) {
   #section2 .fp-tableCell {
