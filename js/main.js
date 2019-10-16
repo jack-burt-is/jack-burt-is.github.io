@@ -20,7 +20,7 @@ var Index = Barba.BaseView.extend({
 
     window.onscroll = function() {index_scroll()};
 
-    index_particles();
+    //index_particles();
   }
 });
 
