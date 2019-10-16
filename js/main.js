@@ -302,9 +302,9 @@ function retail_arrows() {
 function index_particles() {
 
 // modified version of random-normal
-NUM_PARTICLES = 5;
+NUM_PARTICLES = 600;
 PARTICLE_SIZE = 0.5; // View heights
-SPEED = 100000; // Milliseconds
+SPEED = 2; // Milliseconds
 OFFSET = 12;
 
 window.mobilecheck = function() {
