@@ -247,9 +247,16 @@ function retail_arrows() {
   var id_nums = [0,0,0,0];
 
   $(".arrow").click(function(e){
-    var element_select = '#' + e.target.id + ".character-item";
 
-    switch (e.target.id) {
+    if(e.target.id==="") {
+      var target_id = e.target.parentElement.id;
+    } else {
+      var target_id = e.target.id;
+    }
+    
+    var element_select = '#' + target_id + ".character-item";
+    
+    switch (target_id) {
       case 'hair':
         var num = 0;
         id_nums[num]++;
