@@ -183,6 +183,7 @@ $color: #68A098;
 }
 
 #section3-report {
+	margin:auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -193,7 +194,16 @@ $color: #68A098;
 
 }
 
+#section3 iframe {
+	width: 75vw;
+	height: 60vh;
+}
+
 @media screen and (max-width: 1200px) {
+
+	#section2 .fp-tableCell {
+	    max-height: 80vh;
+	}
 
 	#section1-intro {
 		h2 {
@@ -207,11 +217,18 @@ $color: #68A098;
 		}
 	}
 
-	#phone-hole {
+	#section1 #phone-hole {
 		float: right;
 		width: 50vw;
 		height: 50vw;
 		margin-top: 10vw;
+	}
+
+	#section2 #phone-hole {
+		float: right;
+		width: 20vw;
+		height: 22vw;
+		margin-top: 5vw;
 	}
 
 	#portrait-mockup-container {
@@ -224,7 +241,12 @@ $color: #68A098;
 	}
 
 	.container-scrolled {
-
+		top: calc(25vh - 5vw) !important;
+		right: -5vw;
+		height: 40vw !important;
+		width: 20vw !important;
+		max-width: 280px;
+		max-height: 560px;
 	}
 
 	#bg-circle {
