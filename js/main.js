@@ -20,7 +20,7 @@ var Index = Barba.BaseView.extend({
 
     window.onscroll = function() {index_scroll()};
 
-    //index_particles();
+    index_particles();
   }
 });
 
@@ -302,7 +302,7 @@ function retail_arrows() {
 function index_particles() {
 
 // modified version of random-normal
-NUM_PARTICLES = 600;
+NUM_PARTICLES = 5;
 PARTICLE_SIZE = 0.5; // View heights
 SPEED = 100000; // Milliseconds
 OFFSET = 12;
