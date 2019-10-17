@@ -62,6 +62,138 @@
 	mix-blend-mode: difference;
 }
 
+/* Wrapper */
+#socials {
+	font-size: 2.5em;
+	padding-top: 45px;
+}
+
+.icon-button {
+	background-color: transparent;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 2.6rem;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+
+
+
+.twitter span {
+	background-color: #4099ff;
+}
+.github span {
+	background-color: #24292e;
+}
+.linkedin span {
+	background-color: #0e76a8;
+}
+.email span {
+  background-color: #D44638;
+}
+
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+.icon-button .fa-github {
+	color: #24292e;
+}
+.icon-button .fa-linkedin-in {
+	color: #0e76a8;
+}
+
+.icon-button .fa-envelope {
+  color: #fff;
+}
+
+
+
+
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-github,
+.icon-button:hover .fa-linkedin-in,
+.icon-button:hover .fa-envelope{
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+	  padding: 10px;
+  }
+}
+
+
 #section2 {
 	background-color: #f0f0f0;
 	display: flex;
@@ -221,26 +353,6 @@
 #languages .skill {
 
 }
-
-
-
-/*@media only screen and (max-width: 1200px) {
-
-	h1 {
-		font-size: 4em;
-	}
-	h2 {
-		font-size: 3em;
-	}
-	li, h3{
-		font-size: 2em !important;
-	}
-	p {
-		font-size: 2em !important;
-		width: 90%;
-	}
-
-}*/
 
 @media screen and (max-width: 1200px) {
 	#location {
