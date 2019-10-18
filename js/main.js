@@ -20,7 +20,8 @@ var Index = Barba.BaseView.extend({
 
     window.onscroll = function() {index_scroll()};
 
-    index_particles();
+    //index_particles();
+    vanta();
   }
 });
 
@@ -297,6 +298,16 @@ function retail_arrows() {
     }
   });
 
+}
+
+function vanta() {
+        VANTA.NET({
+          el: "#section1",
+          color: 0xff5050,
+          points: 6.00,
+          maxDistance: 21.00,
+          spacing: 17.00
+        })
 }
 
 function index_particles() {
