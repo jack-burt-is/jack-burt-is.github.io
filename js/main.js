@@ -203,6 +203,8 @@ function rhs_scroll() {
 
 function index_scroll() {
 
+  var isVisible=false;
+
     if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180){
     // document.getElementById("myImg").className = "slideUp";
 
