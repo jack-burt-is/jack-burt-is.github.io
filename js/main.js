@@ -1,4 +1,6 @@
 var LabelArr;
+var isVisible = false;
+var lastSection = 0;
 
 var Index = Barba.BaseView.extend({
   namespace: 'index',
@@ -9,13 +11,10 @@ var Index = Barba.BaseView.extend({
     LabelArr = ['Home', 'About me', 'Skills & Technologies'];
     init(LabelArr);
 
-    var isVisible = false;
-
-    var textWrapper = document.querySelector('.ml9 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    var textWrapper = document.querySelector('.ml11 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
 
     animateIn();
-
     isVisible = true;
 
     window.onscroll = function() {index_scroll()};
@@ -202,10 +201,10 @@ function rhs_scroll() {
 
 function index_scroll() {
 
-  var isVisible=false;
+  //console.log(fullpage_api.getActiveSection());
+
 
     if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180){
-    // document.getElementById("myImg").className = "slideUp";
 
         animateOut();
 
@@ -219,29 +218,70 @@ function index_scroll() {
     }
 }
 
+
+  
+
+// function animateIn() {
+//     anime({
+//         targets: '.ml9, #subtitle',
+//         opacity: 1,
+//         duration: 1000,
+//         easing: "easeOutExpo"
+//     });
+//     anime({
+//         targets: '.ml9 .letter',
+//         scale: [0, 1],
+//         duration: 1500,
+//         elasticity: 600,
+//         delay: (el, i) => 45 * (i+1)
+//     });
+// }
+
 function animateIn() {
-    anime({
-        targets: '.ml9, #subtitle',
-        opacity: 1,
-        duration: 1000,
-        easing: "easeOutExpo"
-    });
-    anime({
-        targets: '.ml9 .letter',
-        scale: [0, 1],
-        duration: 1500,
-        elasticity: 600,
-        delay: (el, i) => 45 * (i+1)
-    });
+  anime.timeline({loop: false})
+  .add({
+    targets: '.ml11, #subtitle',
+    opacity: [0,1],
+    duration: 1000,
+    easing: "easeOutExpo"
+  })
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11 .line',
+    opacity: [1,0],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+
 }
 
 function animateOut() {
-    anime({
-        targets: '.ml9, #subtitle',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo"
-    });
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml11, #subtitle',
+      opacity: 0,
+      duration: 100,
+      easing: "easeOutExpo"
+    })
 }
 
 function retail_arrows() {
