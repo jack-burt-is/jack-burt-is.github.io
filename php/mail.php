@@ -17,11 +17,7 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
-$honeypot = $_POST['firstname']
-if (!empty($honeypot)) {
-    
-    $errors .= "\n Error: The honeypot thinks you are a spambot. If this is a mistake I'm sorry! Please email me directly."
-}
+
 
 if( empty($errors))
 {
