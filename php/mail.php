@@ -17,7 +17,8 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
-if (!empty($_REQUEST['password']) && (bool) $_REQUEST['password'] == TRUE) {
+$honeypot = $_POST['firstname']
+if (!empty($honeypot)) {
     
     $errors .= "\n Error: The honeypot thinks you are a spambot. If this is a mistake I'm sorry! Please email me directly."
 }
