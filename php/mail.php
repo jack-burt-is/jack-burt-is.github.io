@@ -17,6 +17,11 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
+if (!empty($_REQUEST['password']) && (bool) $_REQUEST['password'] == TRUE) {
+    
+    $errors .= "\n Error: The honeypot thinks you are a spambot. If this is a mistake I'm sorry! Please email me directly."
+}
+
 if( empty($errors))
 {
 $to = $myemail;
@@ -31,6 +36,5 @@ mail($to,$email_subject,$email_body,$headers);
 header('Location: /email-confirm.html');
 } else {
     header('Location: /email-failure.html');
-
 }
 ?>
