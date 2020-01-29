@@ -55,6 +55,6 @@ mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
 header('Location: /email-confirm.html');
 } else {
-    header('Location: /email-failure.php?errors='.$errors);
+    header("Location: /email-failure.php? errors = $errors");
 }
 ?>
