@@ -2,6 +2,11 @@ var LabelArr;
 var isVisible = false;
 var lastSection = 0;
 
+$(window).on("load", function() {
+      console.log("load");
+      $(".loader-wrapper").fadeOut("slow");
+    });
+
 var Index = Barba.BaseView.extend({
   namespace: 'index',
   onEnter: function() {
