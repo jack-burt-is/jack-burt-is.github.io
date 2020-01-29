@@ -32,6 +32,11 @@
 			<div class="section" id="section1">
 				<h1>Sorry, something went wrong!</h1>
 				<p>The email could not be sent, please head back to the contact page to try again, or email from your preferred client to <a href="mailto:contact@jackburt.me.uk">contact@jackburt.me.uk</a>.</p>
+				<p>The reason for this is as follows:</p>
+				<?php
+				$errors=$_GET['errors'];
+					echo "<p>The value of the variable is : " . $errors . "</p>";
+				?>
 			</div>
 
 		</div>

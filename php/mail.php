@@ -1,6 +1,8 @@
 <?php
 $errors = '';
-$myemail = 'contact@jackburt.me.uk';//<-----Put Your email address here.
+$myemail = 'contact@jackburt.me.uk';
+
+
 if(empty($_POST['name'])  ||
    empty($_POST['email']) ||
    empty($_POST['message']))
@@ -10,6 +12,8 @@ if(empty($_POST['name'])  ||
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
+$captcha=$_POST['g-recaptcha-response'];
+
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
 $email_address))
@@ -21,6 +25,21 @@ $honeypot = $_POST['firstname'];
 if (!empty($honeypot)) {
     
     $errors .= "\n Error: The honeypot thinks you are a spambot. If this is a mistake I'm sorry! Please email me directly.";
+}
+
+if (!$captcha) {
+    $errors .= "\n Error: Please complete the captcha before submitting the form, otherwise email me directly.";
+} else {
+$secretKey = "6Le8NM4UAAAAABlbE--g7N0OJs6k0FcB-WQ80oNp";
+$url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) . '&response=' . urlencode($captcha);
+$response = file_get_contents($url);
+$responseKeys = json_decode($response,true);
+}
+
+if(!$responseKeys["success"]) {
+
+	$errors .= "\n Error: I think you may be a bot as you've failed the captcha. If this is a mistake, sorry! Please email me directly.";
+
 }
 
 if( empty($errors))
@@ -36,6 +55,6 @@ mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
 header('Location: /email-confirm.html');
 } else {
-    header('Location: /email-failure.html');
+    header('Location: /email-failure.php errors = $errors');
 }
 ?>
