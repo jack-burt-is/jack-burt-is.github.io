@@ -48,6 +48,11 @@ var Contact = Barba.BaseView.extend({
   onEnterCompleted: function() {
     LabelArr = ['Links', 'Form'];
     init(LabelArr);
+
+    $.getScript("https://www.google.com/recaptcha/api.js", function(){
+        //alert("Running test.js");
+        console.log("Ran api script");
+    });
   }
 });
 
