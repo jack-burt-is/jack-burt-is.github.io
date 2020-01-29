@@ -30,7 +30,7 @@ if (!empty($honeypot)) {
 if (!$captcha) {
     $errors .= "\n Error: Please complete the captcha before submitting the form, otherwise email me directly.";
 } else {
-$secretKey = "6Le8NM4UAAAAABlbE--g7N0OJs6k0FcB-WQ80oNp";
+$secretKey = "6LfF-NMUAAAAAJKcU5H62-1OnnhIv2EUa9FK7eN-";
 $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) . '&response=' . urlencode($captcha);
 $response = file_get_contents($url);
 $responseKeys = json_decode($response,true);
@@ -55,6 +55,6 @@ mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
 header('Location: /email-confirm.html');
 } else {
-    header('Location: /email-failure.php errors = $errors');
+    header('Location: /email-failure.php? errors = $errors');
 }
 ?>
