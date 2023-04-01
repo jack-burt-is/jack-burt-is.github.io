@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="main.js"></script>
     <title>Hope Bristow</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="navbar-container container">
@@ -18,11 +22,26 @@
             </div>
             <ul class="menu-items">
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Photos</a></li>
+                <li><a href="/photos">Photos</a></li>
             </ul>
-            <h1 class="logo">Navbar</h1>
+            <h1 class="logo">Hope Bristow</h1>
         </div>
     </nav>
+
+    <div class="content">
+        <div class="countdown-container">
+            <h1 id="headline">Countdown to chaos...</h1>
+            <div id="countdown">
+                <ul>
+                    <li class="countdown-li"><span id="days"></span>Days</li>
+                    <li class="countdown-li"><span id="hours"></span>Hours</li>
+                    <li class="countdown-li"><span id="minutes"></span>Minutes</li>
+                    <li class="countdown-li"><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
