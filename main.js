@@ -25,7 +25,7 @@ $(document).ready(function () {
         // }
         // //end
 
-        let stagdate = "04/21/2023";
+        let stagdate = "2023-04-21T13:50:00";
 
         const countDown = new Date(stagdate).getTime(),
             x = setInterval(function () {
