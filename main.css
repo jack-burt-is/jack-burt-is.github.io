@@ -248,6 +248,10 @@ body {
     align-items: center;
 }
 
+.gallery-content {
+    height: initial;
+}
+
 .card .front {
     background-color: #333;
     color: #ddd;
