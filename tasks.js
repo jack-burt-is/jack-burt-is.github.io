@@ -9,10 +9,10 @@ $(document).ready(function () {
         "Do a shot",
         "Get a stranger to buy you a drink",
         "Swap an item of clothing with someone",
-        "Match someone drinking",
+        "Drink with a mate",
         "Choose someone to drink",
         "Steal something from the current venue",
-        ""
+        "Free pass"
     ]
 
     var taskNumber = Math.floor(Math.random() * ((tasks.length) - 0));
