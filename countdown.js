@@ -1,29 +1,10 @@
 $(document).ready(function () {
-    $('.card-container').on('click', function () {
-        $('.card').toggleClass('flipped');
-    });
 
     (function () {
         const second = 1000,
             minute = second * 60,
             hour = minute * 60,
             day = hour * 24;
-
-        // //I'm adding this section so I don't have to keep updating this pen every year :-)
-        // //remove this if you don't need it
-        // let today = new Date(),
-        //     dd = String(today.getDate()).padStart(2, "0"),
-        //     mm = String(today.getMonth() + 1).padStart(2, "0"),
-        //     yyyy = today.getFullYear(),
-        //     nextYear = yyyy + 1,
-        //     dayMonth = "09/30/",
-        //     stagdate = dayMonth + yyyy;
-
-        // today = mm + "/" + dd + "/" + yyyy;
-        // if (today > stagdate) {
-        //     stagdate = dayMonth + nextYear;
-        // }
-        // //end
 
         let stagdate = "2023-04-21T13:50:00";
 
